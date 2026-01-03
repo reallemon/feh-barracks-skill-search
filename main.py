@@ -1,12 +1,13 @@
 import logging
 from logging.handlers import RotatingFileHandler
 import sys
-import updater
+# import updater
+import downloader
 
 logger = logging.getLogger(__name__)
 
 def main() -> None:
-    updater.run_upstream_script()
+    downloader.main()
 
 
 if __name__ == "__main__":
